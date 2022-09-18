@@ -1,0 +1,406 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    height: 100%;
+    background-image: radial-gradient(rgb(165, 80, 94) , rgb(236, 233, 233));
+
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+header {
+    height: 140px;
+    width: 370px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    border: none;
+}
+
+
+#container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+#hood {
+   
+   width: 250px;
+   margin: 0 auto;
+   color: azure;
+   text-shadow: 0px 0px 7px black;
+}
+
+#hood:hover {
+    box-shadow: 0px 0px 7px black;
+}
+
+#links {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem
+    
+}
+
+#links:hover {
+    box-shadow: 0px 0px 7px black;
+}
+
+#links ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#links ul li {
+        list-style: none;
+    }
+
+#links ul li a {
+    color: azure;text-decoration: none;
+    text-shadow: 0px 0px 7px black;
+}
+
+#links ul li a:hover {
+    color: azure;text-decoration: none;
+    text-shadow: 0px 0px 7px rgb(252, 196, 93);
+}
+
+#sct-places {
+    
+    width: 375px;
+    margin: 0 auto;
+
+}
+
+#container-2 {
+    border-bottom: 2px solid azure;
+    text-align: center;
+    color:rgb(236, 233, 233);
+    text-shadow: 0px 0px 5px black;
+    margin-top: 2rem ;
+}
+
+#places {
+    display: flex;
+    flex-direction: column;
+}
+
+#places div {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+#erciyes, #sazlik, #kıpız {
+    
+    border: 1px solid rgb(236, 233, 233);
+    padding-top: 1rem ;
+    height: 340px;
+    width: 850px;
+    margin: 0 auto;
+}
+
+#erciyes:hover, #sazlik:hover, #kıpız:hover  {
+
+    box-shadow: 2px 2px 12px rgb(236, 233, 233);
+
+}
+
+
+#erciyes h3, #erciyes p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#sazlik h3, #sazlik p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#kıpız h3, #kıpız p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#erciyes-gif {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(/images/erciyes.jpg);
+    background-size: cover;
+}
+
+#erciyes-gif:hover {
+    background: url("https://media.giphy.com/media/YQAeDNCrQpdXfBA2mt/giphy.gif");
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+}
+
+#sazlik-gif {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(/images/sazlik.jpg);
+    background-size: cover;
+}
+
+#sazlik-gif:hover {
+    background-image: url(https://media.giphy.com/media/WomzR7NsVirURITuyn/giphy-downsized-large.gif);
+ 
+
+}
+
+#kıpız-gif {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(/images/kıpız.jpg);
+    background-size: cover;
+}
+
+#kıpız-gif:hover {
+
+background-image: url(https://media.giphy.com/media/IoLzJxVrDp9sc/giphy.gif);
+}
+   
+ 
+#sct-activity {
+    
+    width: 1050px;
+    margin: 0 auto;
+    border-bottom: 2px solid azure;
+    border-top: 2px solid gold;
+}
+
+#container-3 {
+    
+    text-align: center;
+    color:rgb(236, 233, 233);
+    text-shadow: 0px 0px 5px black;
+    margin-top: 2rem ;
+}
+
+#activity div {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+#ski {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#ski span {
+    color:yellow;
+    font-weight: 900;
+    position: absolute;
+}
+
+#ski, #hiking, #paragliding {
+    
+    border: 1px solid rgb(236, 233, 233);
+    padding-top: 1rem ;
+    height: 340px;
+    width: 850px;
+    margin: 0 auto;
+}
+
+#ski:hover, #hiking:hover, #paragliding:hover  {
+
+    box-shadow: 2px 2px 12px rgb(236, 233, 233);
+
+}
+
+
+#ski h3, #ski p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#hiking h3, #hiking p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#paragliding h3, #paragliding p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#ski a {
+    margin-top: 0.6rem;
+}
+
+#ski a img {
+    width: 420px;
+    height: 210px;
+}
+
+#ski a img:hover {
+
+    border: 2.5px solid gold;
+
+}
+
+#hiking {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#hiking span {
+    color:yellow;
+    font-weight: 900;
+    position: absolute;
+}
+
+#hiking a {
+    margin-top: 0.6rem;
+}
+
+#hiking a img {
+    width: 420px;
+    height: 210px;
+}
+
+#hiking a img:hover {
+
+    border: 2.5px solid gold;
+
+}
+
+#paragliding {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#paragliding span {
+    color:yellow;
+    font-weight: 900;
+    position: absolute;
+}
+
+#paragliding a {
+    margin-top: 0.6rem;
+}
+
+#paragliding a img {
+    width: 420px;
+    height: 210px;
+}
+
+#paragliding a img:hover {
+
+    border: 2.5px solid gold;
+
+}
+
+şşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşş
+
+
+#sct-gastronomy {
+    
+    width: 1050px;
+    margin: 0 auto;
+    border-bottom: 2px solid azure;
+    border-top: 2px solid gold;
+}
+
+#container-4 {
+    
+    text-align: center;
+    color:rgb(236, 233, 233);
+    text-shadow: 0px 0px 5px black;
+    margin-top: 2rem ;
+    border-bottom: 2px solid azure;
+    width: 1050px;
+    margin: 0 auto;
+}
+
+#gastronomy {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-meal, #dessert, #drink {
+    
+    border: 1px solid rgb(236, 233, 233);
+    padding-top: 1rem ;
+    height: 340px;
+    width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.bigging-img:hover {
+    width: 320px;
+    height: 275px;
+    border-radius: 50%;
+}
+
+
+.meal-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4rem;
+    margin-bottom: 0.35rem;
+}
+
+.meal-photo img {
+    width: 180px;
+    height: 145px;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+}
+
+#container-5 {
+    border-top: 5px solid gold;
+    display: flex;
+    justify-content:space-between;   
+    width: 1050px;
+    margin: 0 auto;
+    height: 120%;
+    color: beige;
+    text-shadow: 0px 0px 8px black;
+    
+}
+
+
+
+#summary {
+    width: 450px;
+    text-align: justify;
+}
+
+#useful-links ul li {
+    list-style: none;
+}
+
+#useful-links ul li a {
+    text-decoration: none;
+}
+
+
+
+ */

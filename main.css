@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    height: 100%;
+    background-image: radial-gradient(rgb(165, 80, 94) , rgb(236, 233, 233));
+
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+header {
+    height: 140px;
+    width: 1050px;
+    margin: 0 auto;
+    border-bottom: 2px solid azure;
+}
+
+
+#container-1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    border: 3px solid salmon;
+    border-radius: 5%;
+    animation: circle 5s infinite ;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    margin-top: 22px;
+}
+
+.circle-1 {
+
+    width: 65px;
+    height: 65px;
+    border: 3px solid purple;
+    border-radius: 5%;
+    margin: 3.2px;
+    animation: circle 5s infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+
+}
+
+.circle img {
+    width: 59px;
+    height: 59px;
+    
+}
+
+@keyframes circle {
+    0% { border: 3px solid green; rotate: 0deg;}
+    50% {border: 3px solid red; rotate: 180deg;}
+    100% {border: 3px solid orange; rotate: 360deg;}
+}
+
+
+#hood {
+    padding: 0.5rem;
+    margin: 1rem;
+    flex-grow: 1;
+    color: azure;
+    border: 1px solid azure ;
+    text-shadow: 0px 0px 7px black;
+}
+
+
+
+#hood:hover {
+    box-shadow: 0px 0px 7px black;
+}
+
+#links {
+    display: flex;
+    padding: 0.5rem;
+    margin: 1rem;
+    flex-grow: 1;
+    border: 1px solid azure ;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#links:hover {
+    box-shadow: 0px 0px 7px black;
+}
+
+
+
+#links ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+#links ul li {
+    padding: 0.5rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#links ul li a {
+    color: azure;text-decoration: none;
+    text-shadow: 0px 0px 7px black;
+}
+
+#links ul li a:hover {
+    color: azure;text-decoration: none;
+    text-shadow: 0px 0px 7px rgb(252, 196, 93);
+}
+
+#animation {
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   height: 600px;
+   width: 1050px;
+   margin: 0 auto;
+
+}
+
+.road {
+    position: absolute;
+    height: 500px;
+    width: 890px;
+    margin: 0 auto;
+    background: url(/images/Meydan.jpg);
+    background-size: cover;
+
+    animation-name: road;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function:linear;
+    animation-direction: reverse;
+
+
+}
+@keyframes road {
+    from {
+    }
+    to {
+        background-position:890px 0 ;
+    }
+}
+
+.vehicle {
+    position: absolute;
+    height: 160px;
+    width: 450px;
+    background: url(/images/arac.png);
+    background-size: cover;
+    top: 240px;
+    left: 60px;
+}
+
+.tire {
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    background: url(/images/teker.png);
+    background-size: cover;
+    animation-name: tire;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function:linear;
+}
+
+@keyframes tire {
+    from {}
+    to {transform: rotate(360deg);}
+}
+
+#tire-1 {
+    top:92px;
+    left:48px;
+}
+
+#tire-2 {
+    top: 92px;
+    left: 333px;
+}
+
+
+#sct-places {
+    
+    width: 1050px;
+    margin: 0 auto;
+    border-bottom: 2px solid azure;
+    border-top: 2px solid gold;
+    border: 1.5px solid gold;
+    border-radius: 2px;
+    background: linear-gradient(black, red) ;
+}
+
+#container-2 {
+    border-bottom: 2px solid azure;
+    text-align: center;
+    color:rgb(236, 233, 233);
+    text-shadow: 0px 0px 5px black;
+    margin-top: 2rem ;
+}
+
+#places {
+    display: flex;
+    flex-direction: column;
+}
+
+#places div {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+#erciyes, #sazlik, #kıpız {
+    
+    border: 1px solid rgb(236, 233, 233);
+    padding-top: 1rem ;
+    height: 340px;
+    width: 850px;
+    margin: 0 auto;
+}
+
+#erciyes:hover, #sazlik:hover, #kıpız:hover  {
+
+    box-shadow: 2px 2px 12px rgb(236, 233, 233);
+
+}
+
+
+#erciyes h3, #erciyes p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#sazlik h3, #sazlik p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#kıpız h3, #kıpız p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#erciyes-gif {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(/images/erciyes.jpg);
+    background-size: cover;
+}
+
+#erciyes-gif:hover {
+    background: url("https://media.giphy.com/media/YQAeDNCrQpdXfBA2mt/giphy.gif");
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+}
+
+#sazlik-gif {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(/images/sazlik.jpg);
+    background-size: cover;
+}
+
+#sazlik-gif:hover {
+    background-image: url(https://media.giphy.com/media/WomzR7NsVirURITuyn/giphy-downsized-large.gif);
+ 
+
+}
+
+#kıpız-gif {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(/images/kıpız.jpg);
+    background-size: cover;
+}
+
+#kıpız-gif:hover {
+
+background-image: url(https://media.giphy.com/media/IoLzJxVrDp9sc/giphy.gif);
+}
+   
+ 
+#sct-activity {
+    
+    width: 1050px;
+    margin: 0 auto;
+    border-bottom: 2px solid azure;
+    border-top: 2px solid gold;
+    border: 1.5px solid gold;
+    border-radius: 2px;
+    background: linear-gradient(black, blue) ;
+}
+
+#container-3 {
+    
+    text-align: center;
+    color:rgb(236, 233, 233);
+    text-shadow: 0px 0px 5px black;
+    margin-top: 2rem ;
+}
+
+#activity div {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+#ski {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#ski span {
+    color:yellow;
+    font-weight: 900;
+    position: absolute;
+}
+
+#ski, #hiking, #paragliding {
+    
+    border: 1px solid rgb(236, 233, 233);
+    padding-top: 1rem ;
+    height: 340px;
+    width: 850px;
+    margin: 0 auto;
+}
+
+#ski:hover, #hiking:hover, #paragliding:hover  {
+
+    box-shadow: 2px 2px 12px rgb(236, 233, 233);
+
+}
+
+
+#ski h3, #ski p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#hiking h3, #hiking p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#paragliding h3, #paragliding p {
+    padding: 0.2rem 0.6rem ;
+}
+
+#ski a {
+    margin-top: 0.6rem;
+}
+
+#ski a img {
+    width: 420px;
+    height: 210px;
+}
+
+#ski a img:hover {
+
+    border: 2.5px solid gold;
+
+}
+
+#hiking {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#hiking span {
+    color:yellow;
+    font-weight: 900;
+    position: absolute;
+}
+
+#hiking a {
+    margin-top: 0.6rem;
+}
+
+#hiking a img {
+    width: 420px;
+    height: 210px;
+}
+
+#hiking a img:hover {
+
+    border: 2.5px solid gold;
+
+}
+
+#paragliding {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#paragliding span {
+    color:yellow;
+    font-weight: 900;
+    position: absolute;
+}
+
+#paragliding a {
+    margin-top: 0.6rem;
+}
+
+#paragliding a img {
+    width: 420px;
+    height: 210px;
+}
+
+#paragliding a img:hover {
+
+    border: 2.5px solid gold;
+
+}
+
+
+
+#sct-gastronomy {
+    
+    width: 1050px;
+    margin: 0 auto;
+    border-bottom: 2px solid azure;
+    border-top: 2px solid gold;
+    border: 1.5px solid gold;
+    border-radius: 2px;
+    background: linear-gradient(rgb(22, 31, 1), rgb(45, 46, 46)) ;
+}
+
+#container-4 {
+    
+    text-align: center;
+    color:rgb(236, 233, 233);
+    text-shadow: 0px 0px 5px black;
+    margin-top: 2rem ;
+    border-bottom: 2px solid azure;
+    width: 1050px;
+    margin: 0 auto;
+}
+
+#gastronomy {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-meal, #dessert, #drink {
+    
+    border: 1px solid rgb(236, 233, 233);
+    padding-top: 1rem ;
+    height: 340px;
+    width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.bigging-img:hover {
+    width: 320px;
+    height: 275px;
+    border-radius: 50%;
+}
+
+
+.meal-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4rem;
+    margin-bottom: 0.35rem;
+}
+
+.meal-photo img {
+    width: 180px;
+    height: 145px;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+}
+
+#container-5 {
+    border-top: 5px solid gold;
+    display: flex;
+    justify-content:space-between;   
+    width: 1050px;
+    margin: 0 auto;
+    height: 120%;
+    color: beige;
+    text-shadow: 0px 0px 8px black;
+    
+}
+
+
+
+#summary {
+    width: 450px;
+    text-align: justify;
+}
+
+#useful-links ul li {
+    list-style: none;
+}
+
+#useful-links ul li a {
+    text-decoration: none;
+}
+
+
+
+
